@@ -1,0 +1,79 @@
+.product-form {
+    width: 450px;
+    margin: 40px auto;
+    padding: 35px;
+    background: linear-gradient(145deg, #ffffff, #f4f1ff);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(75, 46, 131, 0.18);
+    border: 1px solid rgba(75, 46, 131, 0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    transition: all 0.3s ease;
+}
+
+.product-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px rgba(75, 46, 131, 0.25);
+}
+
+.product-form input[type="text"],
+.product-form input[type="file"] {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #e2dbff;
+    border-radius: 12px;
+    background: #ffffff;
+    font-size: 15px;
+    color: #333;
+    outline: none;
+    transition: 0.3s ease;
+    box-sizing: border-box;
+}
+
+.product-form input::placeholder {
+    color: #888;
+}
+
+.product-form input:focus {
+    border-color: #6a38c2;
+    box-shadow: 0 0 12px rgba(106, 56, 194, 0.2);
+}
+
+.product-form input[type="file"] {
+    cursor: pointer;
+    background: #faf8ff;
+    padding: 12px;
+}
+
+.product-form button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #4b2e83, #7b4dff);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.product-form button:hover {
+    background: linear-gradient(135deg, #3d256b, #6236d4);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(75, 46, 131, 0.3);
+}
+
+.product-form button:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 500px) {
+    .product-form {
+        width: 95%;
+        padding: 25px;
+    }
+}
