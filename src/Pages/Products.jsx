@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import DashboardLayout from '../Components/DashboardLayout';
-import '../Pages/CSS/Product.css';
+import './CSS/Product.css';
 import { useNavigate } from 'react-router-dom';
 
 const Products = () => {
